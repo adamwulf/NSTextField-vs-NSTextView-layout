@@ -16,6 +16,11 @@
     // Do any additional setup after loading the view.
 }
 
+-(void) viewDidAppear{
+    [super viewDidAppear];
+    
+    [[[self view] window] makeFirstResponder:nil];
+}
 
 - (void)setRepresentedObject:(id)representedObject {
     [super setRepresentedObject:representedObject];
